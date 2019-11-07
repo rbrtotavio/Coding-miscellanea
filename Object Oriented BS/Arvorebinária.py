@@ -88,6 +88,7 @@ def Tree_Delete(tree, nodo):
     x = TreeNode(None)
     if nodo.left == None or nodo.right == None:
         y = nodo
+    else:
         y = Tree_Successor(nodo)
     if y.left != None:
         x = y.left
